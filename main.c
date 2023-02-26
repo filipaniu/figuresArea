@@ -18,10 +18,15 @@ double getCircleArea(double r) {
     return pi * r * r;
 }
 
+double getCylinderVolume(double r, double h) {
+    return getCircleArea(r) * h;
+}
+
 int main() {
     //  printf("%lf\n", getTriangleArea(5, 20));
     // printf("\n%lf", getTrapezeArea(3, 6, 2));
     // printf("%lf", getCubeVolume(3));
-    printf("\n%.25lf", getCircleArea(12));
+    // printf("\n%.25lf", getCircleArea(12));
+    printf("\n%lf", getCylinderVolume(4, 5));
     return 0;
 }
